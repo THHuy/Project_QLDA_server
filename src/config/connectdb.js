@@ -4,11 +4,11 @@ require("dotenv").config({
 });
 // Cấu hình kết nối
 const pool = new Pool({
-  host: process.env.DB_HOST, // Địa chỉ server PostgreSQL
-  user: process.env.DB_USER, // Username mặc định của PostgreSQL (thay nếu cần)
-  password: process.env.DB_PASSWORD, // Mật khẩu bạn đặt khi cài PostgreSQL
-  database: process.env.DB_NAME, // Tên database
-  port: 5432, // Cổng mặc định của PostgreSQL
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
+  port: 5432,
 });
 
 // Kiểm tra kết nối

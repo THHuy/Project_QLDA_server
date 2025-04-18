@@ -1,4 +1,4 @@
-const homeRoute = require("./homeRouter/home.router.js");
+const homeRoute = require("./homeRoutes/home.routes.js");
 function route(app) {
   app.use("/api", homeRoute);
 }

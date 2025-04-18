@@ -4,7 +4,7 @@ const app = express();
 const port = 5000;
 app.use(cors());
 app.use(express.json()); // Để parse body request
-const route = require("./router");
+const route = require("./routes");
 route(app);
 // Start the server
 app.listen(port, () => {
